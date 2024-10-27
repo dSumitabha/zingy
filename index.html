@@ -536,7 +536,7 @@
                         <div class="lg:h-[30rem] h-auto lg:w-full w-screen custom-scroll overflow-auto lg:mx-0 -mx-4 px-2">
                             <nav class="flex lg:flex-col gap-2" aria-label="Tabs" role="tablist" data-hs-tabs-vertical="true">
                                 <!-- Bankura Restaurants Tab Button -->
-                                <button type="button" class="flex p-1" id="bankura-restaurants-item" data-hs-tab="#bankura-restaurants" aria-controls="bankura-restaurants" role="tab">
+                                <button type="button" class="flex p-1 active" id="bankura-restaurant-item" data-hs-tab="#bankura-restaurants" aria-controls="bankura-restaurants" role="tab">
                                     <span class="hs-tab-active:bg-primary text-default-900 flex items-center justify-start gap-4 p-2 pe-6 lg:w-2/3 w-full transition-all hover:text-primary rounded-full">
                                         <span class="hs-tab-active:bg-white h-14 w-14 inline-flex items-center justify-center rounded-full">
                                             <img src="assets/cup-3dff3c2f.svg" class="h-8 w-8">
@@ -546,7 +546,7 @@
                                 </button>
 
                                 <!-- Bishnupur Restaurants Tab Button -->
-                                <button type="button" class="flex p-1" id="bishnupur-menu-item" data-hs-tab="#bishnupur-menu" aria-controls="bbishnupurmenu" role="tab">
+                                <button type="button" class="flex p-1" id="bishnupur-restaurant-item" data-hs-tab="#bishnupur-restaurants" aria-controls="bishnupur-restaurant" role="tab">
                                     <span class="hs-tab-active:bg-primary text-default-900 flex items-center justify-start gap-4 p-2 pe-6 lg:w-2/3 w-full transition-all hover:text-primary rounded-full">
                                         <span class="hs-tab-active:bg-white h-14 w-14 inline-flex items-center justify-center rounded-full">
                                             <img src="assets/burger-1-0c3ba5a6.svg" class="h-8 w-8">
@@ -555,18 +555,18 @@
                                     </span>
                                 </button>
 
-                                <!-- Noodles Menu Tab Button -->
-                                <button type="button" class="flex p-1" id="noodles-menu-item" data-hs-tab="#noodles-menu" aria-controls="noodles-menu" role="tab">
+                                <!-- Chittaranjan Restaurants Tab Button -->
+                                <button type="button" class="flex p-1" id="chittaranjan-restaurant-item" data-hs-tab="#chittaranjan-restaurants" aria-controls="chittaranjan-menu" role="tab">
                                     <span class="hs-tab-active:bg-primary text-default-900 flex items-center justify-start gap-4 p-2 pe-6 lg:w-2/3 w-full transition-all hover:text-primary rounded-full">
                                         <span class="hs-tab-active:bg-white h-14 w-14 inline-flex items-center justify-center rounded-full">
                                             <img src="assets/noodles-8ff3aeb9.svg" class="h-8 w-8">
                                         </span>
-                                        <span class="hs-tab-active:text-white text-base font-medium">Chittaranjan/span>
+                                        <span class="hs-tab-active:text-white text-base font-medium">Chittaranjan</span>
                                     </span>
                                 </button>
 
-                                <!-- Pizza Menu Tab Button -->
-                                <button type="button" class="flex p-1 active" id="pizza-menu-item" data-hs-tab="#pizza-menu" aria-controls="pizza-menu" role="tab">
+                                <!-- Raniganj Restaurants Tab Button -->
+                                <button type="button" class="flex p-1" id="raniganj-restaurant-item" data-hs-tab="#raniganj-restaurants" aria-controls="raniganj-restaurant" role="tab">
                                     <span class="hs-tab-active:bg-primary text-default-900 flex items-center justify-start gap-4 p-2 pe-6 lg:w-2/3 w-full transition-all hover:text-primary rounded-full">
                                         <span class="hs-tab-active:bg-white  p-4 h-14 w-14 inline-flex items-center justify-center rounded-full">
                                             <img src="assets/pizza-slice%201-79554296.svg" class="h-8 w-8">
@@ -575,9 +575,6 @@
                                     </span>
                                 </button>
 
-                                
-
-                                
                             </nav><!-- end tab -->
                         </div>
                     </div>
@@ -587,7 +584,7 @@
                     <div class="relative lg:mt-24">
                         <div class="bg-primary/10 rounded-lg lg:pb-16">
                             <div class="lg:p-6 p-4">
-                                <div id="bankura-menu" role="tabpanel" aria-labelledby="bankura-restaurants-items">
+                                <div id="bankura-restaurants" role="tabpanel" aria-labelledby="bankura-restaurant-item">
                                     <div class="grid grid-cols-1">
                                         <div class="swiper menu-swiper w-full h-full">
                                             <div class="swiper-wrapper">
@@ -627,7 +624,7 @@
                                                         <div class="absolute inset-0 bg-default-950/20">
                                                             <div class="inline-flex items-end h-full w-full">
                                                                 <div class="p-6">
-                                                                    <h5 class="text-xl font-medium text-white mb-2">Vegetarian Pizza</h5>
+                                                                    <h5 class="text-xl font-medium text-white mb-2">Seven Bite Cafe</h5>
                                                                     <h5 class="text-xl font-semibold text-white mb-2">Starts : <span class="text-base font-medium text-yellow-400">₹</span> 299</h5>
                                                                     <a href="" class="inline-flex items-center text-white border-b border-dashed border-white">Order Now <i data-lucide="chevron-right" class="h-5 w-5"></i></a>
                                                                 </div>
@@ -651,12 +648,12 @@
                                                     </div>
                                                 </div><!-- end slide -->
                                             </div>
-                                        </div><!-- end pizza menu slider -->
+                                        </div><!-- end bankura restaurants slider -->
                                     </div><!--end grid-->
                                 </div>
                                 <!-- end bankura-restaurants -->
 
-                                <div id="bishnupur-menu" class="hidden" role="tabpanel" aria-labelledby="bishnupur-restaurants-item">
+                                <div id="bishnupur-restaurants" class="hidden" role="tabpanel" aria-labelledby="bishnupur-restaurant-item">
                                     <div class="grid grid-cols-1">
                                         <div class="swiper menu-swiper w-full h-full">
                                             <div class="swiper-wrapper">
@@ -720,9 +717,9 @@
                                         </div><!-- end pizza menu slider -->
                                     </div><!--end grid-->
                                 </div>
-                                <!-- end burger-menu -->
+                                <!-- end bishnupur-menu -->
 
-                                <div id="coffee-menu" class="hidden" role="tabpanel" aria-labelledby="coffee-menu-item">
+                                <div id="chittaranjan-restaurants" class="hidden" role="tabpanel" aria-labelledby="chittaranjan-restaurant-item">
                                     <div class="grid grid-cols-1">
                                         <div class="swiper menu-swiper w-full h-full">
                                             <div class="swiper-wrapper">
@@ -786,10 +783,9 @@
                                         </div>
                                     </div><!--end grid-->
                                 </div>
-                                <!-- end coffee-menu -->
+                                <!-- end chittaranjan-menu -->
 
-
-                                <div id="noodles-menu" class="hidden" role="tabpanel" aria-labelledby="noodles-menu-item">
+                                <div id="raniganj-restaurants" class="hidden" role="tabpanel" aria-labelledby="raniganj-restaurant-item">
                                     <div class="grid grid-cols-1">
                                         <div class="swiper menu-swiper w-full h-full">
                                             <div class="swiper-wrapper">
