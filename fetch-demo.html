@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Fetch API</title>
+</head>
+<body>
+    <button id="fetchButton">Fetch Data</button>
+    <pre id="dataContainer"></pre>
+
+    <script>
+        document.getElementById('fetchButton').addEventListener('click', async () => {
+            const dataContainer = document.getElementById('dataContainer');
+            
+            try {
+                const response = await fetch(
+                    'https://3033-idx-zitter-1732213298910.cluster-nx3nmmkbnfe54q3dd4pfbgilpc.cloudworkstations.dev/api/saikat'
+                    //'https://randomuser.me/api/'
+                );
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                dataContainer.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                dataContainer.textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>
